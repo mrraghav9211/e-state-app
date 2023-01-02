@@ -1,5 +1,4 @@
-import {
-  Box,
+import { Box,
   Button,
   Container,
   Flex,
