@@ -58,7 +58,7 @@ export const stateData=[
         bathroom:2
     },
 ]
-const arr=JSON.parse(localStorage.getItem("propData"));
+const arr=JSON.parse(localStorage.getItem("propData")) || [];
 for(let i=0; i<arr.length; i++){
     stateData.push(arr[i]);
 }

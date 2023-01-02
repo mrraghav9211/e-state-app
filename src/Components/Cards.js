@@ -15,11 +15,11 @@ const Cards = ({ data }) => {
     <div>
       <Container mt={"25px"} maxW={"70vw"}>
         <Flex justifyContent={"space-between"} flexWrap="wrap" gap={"10px"}>
-          {data.map((elem) => {
+          {data.map((elem,key) => {
             return (
               <>
-                <Card maxW="250px" bg={"white"}>
-                  <Image
+                <Card key={key} maxW="250px" bg={"white"}>
+                  <Image 
                     src={elem.img}
                     alt="Green double couch with wooden legs"
                     borderRadius="lg"
@@ -54,14 +54,14 @@ const Cards = ({ data }) => {
                         <Text color={"lightgray"} fontFamily="-moz-initial">
                           <i
                             style={{ color: "#157DEC" }}
-                            class="fa-solid fa-bed"
+                            className="fa-solid fa-bed"
                           ></i>{" "}
                           {elem.bhk} Beds
                         </Text>
                         <Text color={"lightgray"} fontFamily="-moz-initial">
                           <i
                             style={{ color: "#157DEC" }}
-                            class="fa-solid fa-toilet"
+                            className="fa-solid fa-toilet"
                           ></i>{" "}
                           {elem.bathroom} Bathroom
                         </Text>

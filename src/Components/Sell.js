@@ -20,8 +20,6 @@ const Sell = () => {
   const [bhk, setbhk] = useState()
   const [bathroom, setbathroom] = useState()
   const [address, setaddress] = useState()
-  const [image, setimage] = useState()
-  const [istrue, setistrue] = useState()
    
  
   const handleClick=()=>{
@@ -38,7 +36,6 @@ const Sell = () => {
    arr.push(data);
    localStorage.setItem("propData", JSON.stringify(arr))
    alert("Data uploaded successfully")
-   istrue=""
   }
   return (
     <div>
